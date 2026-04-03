@@ -14,3 +14,7 @@ class Message(models.Model):
 
     def __str__(self):
         return f'Message in {self.conversation.title} on {self.created_at}'
+        # Models for storing conversations and messages
+# Conversation -> stores chat title and creation time
+# Message -> stores each message linked to a conversation
+# Fixed __str__ method to properly display message info
