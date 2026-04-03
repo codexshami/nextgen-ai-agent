@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 
+# Create FastAPI app instance
 app = FastAPI()
 
+# Root endpoint
 @app.get("/")
 async def read_root():
-    return {"Hello": "World"}
+    return {"message": "Hello, World"}
